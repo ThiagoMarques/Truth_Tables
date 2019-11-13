@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+/*
+   Stylesheet für besondere Aufgabenstellungen der Formulare
+*/
+
+
+button {
+	width:2em;
+	height:2em;
+	padding: 5px 5px 5px 5px;
+	font-size:x-large;
+}
+
+
+
+label {
+}
+
+.schalter {
+	margin-top:0.5em;
+	margin-left:2em;
+	height:2em;
+}
+
+
+footer {
+	text-align:left;
+}
+
+nav {
+	text-align:left;
+	margin-bottom:0.8em;
+}
+
+details {
+	margin-bottom:0.8em;
+}
+
+input {
+	height: 2em;
+	font-size: large;
+	margin-right: 3em;
+}
+
+.ssi { display:none; }
+#ssi { display:none; }
+
+
+@keyframes animiert {
+	from {
+		box-shadow: 0 2px 2px 0;
+	}
+	to {
+		box-shadow: 0 8px 16px 0;
+	}
+}
+
+
+.knopfbereich {
+	text-align:left;
+	word-spacing:normal;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.knopfgruppe {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-right: 0.5em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-right: 0.5em;
+	white-space: nowrap;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+
+.knopfbereich * {
+	vertical-align:middle;
+}
+.knopfgruppe * {
+	vertical-align:middle;
+}
+
+
+/* iOS-Workaround */
+.knopfgruppe button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* iOS-Workaround */
+.knopfbereich button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.eingabebereich {
+/*	not yet working
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;	*/
+	text-align: left;
+}
+
+}
+
+
+.spendenknopf {
+	margin-bottom:1em;
+	margin-right:0em;
+	animation-name: animiert;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+
+.fehlermeldung {
+	font-size: large;
+	border: 4px solid black;
+	display:none;
+	padding-top: 0.8em;
+	padding-bottom: 0.8em;
+	padding-left: 0.8em;
+	padding-right: 0.8em;
+	text-align: left;
+	background-color: white;
+}
+
+
+/* C.G. 2.4.2019 - Wahrheitstabelle mit fester Überschrift */
+
+#Detailtabelle th , #Uebersichtstabelle th {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	background-color: #dadada;
+	font-size: 125%;
+}
+
+

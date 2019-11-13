@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+
+/*
+   (C) Christian Gottschall 2005
+*/
+
+/* Pseudoklassen */
+
+a:link { text-decoration:none; color:blue; }
+o:visited { text-decoration:none; color:blue; }
+/* a:hover { text-decoration:underline; color:blue; font-size:100%; } */
+
+
+/* allgemeine Attribute */
+body {
+	font-family:Helvetica,Arial,sans-serif;
+	font-size:12pt;
+	color:black;
+	text-align:justify;
+        background-color:#dadada;
+}
+
+address { font-family:Helvetica,Arial,sans-serif; font-size:10pt; }
+pre { font-family:monospace,fixed,Courier; }
+
+/* Texteingabebereich soll im Standardfall äquidistant */
+textarea { font-family:monospace,fixed,Courier;font-size:12pt;width:100%; }
+
+/* Definiendum soll fett gedruckt werden */
+dt {
+	font-weight:bold;
+	text-align:left;
+}
+
+/* Überschriften */
+
+h1,h2,h3,h4,h5,h6 { text-align:left;text-decoration:none;font-weight:normal;
+	font-family:Helvetica,Arial,sans-serif; }
+
+h1 { font-size:22pt; }
+h2 { font-size:18pt; }
+h3 { font-size:14pt; }
+h4 { font-size:12pt;font-weight:bold;text-decoration:underline; }
+h5 { font-size:12pt;font-weight:bold;text-decoration:none; }
+h6 { font-size:12pt;font-weight:normal;text-decoration:underline; }
+
+.klein { font-size:85%; }
+.eingerueckt { margin-left:7mm; }
+
+footer {
+	font-size:85%;
+	text-indent:0pt;
+	text-align:left;
+}
+
